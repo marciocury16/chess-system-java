@@ -62,6 +62,7 @@ public class Board {
 		return positionsExists(position.getRow(),position.getColumn());
 	}
 		public boolean thereIsAPiece(Position position) {
+			
 			if (!positionsExists(position)) {
 				throw new BoardException("position not on the board");
 			}
